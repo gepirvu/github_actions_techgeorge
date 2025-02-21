@@ -3,7 +3,7 @@ commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (HEAD -> master, feature-restruc
 Author: gepirvu <pirvugeorgian.bi@gmail.com>
 Date:   Fri Feb 21 08:48:06 2025 +0100
 
-    4. add logo and css
+    4. add logo and css style
 
 commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
 Author: gepirvu <pirvugeorgian.bi@gmail.com>

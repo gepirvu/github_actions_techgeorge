@@ -24,7 +24,7 @@ examine the history and state (see also: git help revisi
    grep       Print lines matching a pattern
    log        Show commit logs
    show       Show various types of objects
-   status     Show the working tree status
+   status     Show the working tree status!
 
 grow, mark and tweak your common history
    backfill   Download missing objects in a partial clon
