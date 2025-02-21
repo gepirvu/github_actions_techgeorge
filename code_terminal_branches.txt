@@ -1,4 +1,87 @@
 PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (HEAD -> master, feature-restructure)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 08:48:06 2025 +0100
+
+    4. add logo and css
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature/restructure
+error: pathspec 'feature/restructure' did not match any file(s) known to git
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature-restructure
+M       .gitignore
+M       index.html
+Switched to branch 'feature-restructure'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch feature-restructure
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add .
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git commit -m "5. add links and restructure page"
+[feature-restructure d6f1cae] 5. add links and restructure page
+ 2 files changed, 14 insertions(+), 11 deletions(-)
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit d6f1cae6ddcb38d18d82b8c627f0c40fd8866e60 (HEAD -> feature-restructure)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 10:12:39 2025 +0100
+
+    5. add links and restructure page
+
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (master)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 08:48:06 2025 +0100
+
+    4. add logo and css
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout master
+Switched to branch 'master'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        code_terminal_basics.txt
+        code_terminal_branches.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
 commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (HEAD -> master)
 Author: gepirvu <pirvugeorgian.bi@gmail.com>
 Date:   Fri Feb 21 08:48:06 2025 +0100
@@ -22,14 +105,36 @@ Author: gepirvu <pirvugeorgian.bi@gmail.com>
 Date:   Thu Feb 20 15:49:13 2025 +0100
 
     initial commit
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch feature-restructure
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch     
-  feature-restructure
-* master
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature-restructure
-Switched to branch 'feature-restructure'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        code_terminal_basics.txt
+        code_terminal_branches.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add .
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git commit -m "6. correct grammar" 
+[master 5788b5b] 6. correct grammar
+ 3 files changed, 589 insertions(+), 1 deletion(-)
+ create mode 100644 code_terminal_basics.txt
+ create mode 100644 code_terminal_branches.txt
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+nothing to commit, working tree clean
 PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
-commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (HEAD -> feature-restructure, master)
+commit 5788b5bdd5409a9e2963d4b3438105eedd82a137 (HEAD -> master)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 10:15:11 2025 +0100
+
+    6. correct grammar
+
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5
 Author: gepirvu <pirvugeorgian.bi@gmail.com>
 Date:   Fri Feb 21 08:48:06 2025 +0100
 
@@ -37,7 +142,6 @@ Date:   Fri Feb 21 08:48:06 2025 +0100
 
 commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
 Author: gepirvu <pirvugeorgian.bi@gmail.com>
-Date:   Thu Feb 20 16:05:41 2025 +0100
 Date:   Thu Feb 20 16:05:41 2025 +0100
 
     3. add youtube
@@ -53,18 +157,91 @@ Author: gepirvu <pirvugeorgian.bi@gmail.com>
 Date:   Thu Feb 20 15:49:13 2025 +0100
 
     initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature-restrucutre
+error: pathspec 'feature-restrucutre' did not match any file(s) known to git
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature-restructure
+Switched to branch 'feature-restructure'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit d6f1cae6ddcb38d18d82b8c627f0c40fd8866e60 (HEAD -> feature-restructure)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 10:12:39 2025 +0100
+
+    5. add links and restructure page
+
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 08:48:06 2025 +0100
+
+    4. add logo and css
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch feature-restructure
+nothing to commit, working tree clean
 PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch
 * feature-restructure
   master
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch
-* feature-restructure
-  master
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch -D feature-restructure
-error: cannot delete branch 'feature-restructure' used by worktree at 'C:/Users/DTGEORPIRV/Documents/GitHub Actions'
 PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout master
 Switched to branch 'master'
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch -D feature-restructure
-Deleted branch feature-restructure (was 79f3f67).
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch
-* master
-PS C:\Users\DTGEORPIRV\Documents\GitHub Actions>
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git merge feature-restructure
+Auto-merging index.html
+Merge made by the 'ort' strategy.
+ .gitignore |  3 ++-
+ index.html | 22 ++++++++++++----------
+ 2 files changed, 14 insertions(+), 11 deletions(-)
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 5445e252daf2d43590b684e292a3ef0fdf5e8946 (HEAD -> master)
+Merge: 5788b5b d6f1cae
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 10:24:30 2025 +0100
+
+    Merge branch 'feature-restructure'
+    feature append to master branch
+
+commit 5788b5bdd5409a9e2963d4b3438105eedd82a137
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 10:15:11 2025 +0100
+
+    6. correct grammar
+
+commit d6f1cae6ddcb38d18d82b8c627f0c40fd8866e60 (feature-restructure)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 10:12:39 2025 +0100
+
+    5. add links and restructure page
+
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 08:48:06 2025 +0100
+
+    4. add logo and css
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> 
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature-restructure
+Switched to branch 'feature-restructure'
