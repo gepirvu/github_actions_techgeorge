@@ -1,0 +1,518 @@
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git
+usage: git [-v | --version] [-h | --help] [-C <path>] [-
+           [--exec-path[=<path>]] [--html-path] [--man-p
+           [-p | --paginate | -P | --no-pager] [--no-rep
+           [--no-optional-locks] [--no-advice] [--bare] 
+           [--work-tree=<path>] [--namespace=<name>] [--
+           <command> [<args>]
+
+These are common Git commands used in various situations
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitia
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a s
+   restore    Restore working tree files
+   rm         Remove files from the working tree and fro
+
+examine the history and state (see also: git help revisi
+   bisect     Use binary search to find the commit that 
+   diff       Show changes between commits, commit and w
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   backfill   Download missing objects in a partial clon
+   rebase     Reapply commits on top of another base tip
+   reset      Reset current HEAD to the specified state
+   switch     Switch branches
+   tag        Create, list, delete or verify a tag objec
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another rep
+   pull       Fetch from and integrate with another repo
+   push       Update remote refs along with associated o
+
+'git help -a' and 'git help -g' list available subcomman
+concept guides. See 'git help <command>' or 'git help <c
+to read about a specific subcommand or concept.
+See 'git help git' for an overview of the system.
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git con
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git con
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add
+fatal: not a git repository (or any of the parent direct
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git ini
+Initialized empty Git repository in C:/Users/DTGEORPIRV/
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEm
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add
+warning: in the working copy of 'index.html', LF will be
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git sta
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   index.html
+
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git com
+Aborting commit due to empty commit message.
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git com
+[master (root-commit) dfa2aa9] initial commit
+ 1 file changed, 13 insertions(+)
+ create mode 100644 index.html
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add
+warning: in the working copy of 'index.html', LF will be
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git com
+[master dfc59c1] second commit
+ 1 file changed, 1 insertion(+)
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git sta
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+Note: switching to 'dfa2aa922d7f50a17355ccb7ddc98e22bcdf
+
+You are in 'detached HEAD' state. You can look around, m
+changes and commit them, and you can discard any commits
+state without impacting any branches by switching back t
+
+If you want to create a new branch to retain commits you
+do so (now or later) by using -c with the switch command
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.d
+
+HEAD is now at dfa2aa9 initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git sta
+HEAD detached at dfa2aa9
+nothing to commit, working tree clean
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960 (HEAD)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+error: pathspec 'main' did not match any file(s) known t
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+error: pathspec 'masterr' did not match any file(s) know
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+Previous HEAD position was dfa2aa9 initial commit
+Switched to branch 'master'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git sta
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git com
+[master 98a84be] 3. add youtube
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+~
+(END)...skipping...
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+(END)...skipping...
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git sta
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+Note: switching to 'dfc59c122ffb195aecb5ad3609a55a7469be
+
+You are in 'detached HEAD' state. You can look around, m
+changes and commit them, and you can discard any commits
+state without impacting any branches by switching back t
+
+If you want to create a new branch to retain commits you
+do so (now or later) by using -c with the switch command
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.d
+
+HEAD is now at dfc59c1 second commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+Previous HEAD position was dfc59c1 second commit
+Switched to branch 'master'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git rev
+[master e017010] Revert "3. add youtube"
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit e01701061ab09f0e3cf0ae4a0f9a13e24cf40956 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:09:58 2025 +0100
+
+    Revert "3. add youtube"
+
+    This reverts commit 98a84be29ac78c4a1ada3b1af099d6c2
+
+    revert youtube video
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+Note: switching to '98a84be29ac78c4a1ada3b1af099d6c24d90
+
+You are in 'detached HEAD' state. You can look around, m
+changes and commit them, and you can discard any commits
+state without impacting any branches by switching back t
+
+If you want to create a new branch to retain commits you
+do so (now or later) by using -c with the switch command
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.d
+
+HEAD is now at 98a84be 3. add youtube
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git che
+Previous HEAD position was 98a84be 3. add youtube
+Switched to branch 'master'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit e01701061ab09f0e3cf0ae4a0f9a13e24cf40956 (HEAD ->
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:09:58 2025 +0100
+
+    Revert "3. add youtube"
+
+    This reverts commit 98a84be29ac78c4a1ada3b1af099d6c2
+
+    revert youtube video
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+    second commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub APS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git reset --hard 98a84be29ac78c4a1ada3b1af099d6c24d902669      
+ctions> git reset --hard 98a84be29ac78c4a1ada3b1af099d6c24d902669
+HEAD is now at 98a84be 3. add youtube
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD -> master)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669 (HEAD -> master)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+        logo.png
+        styles.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git add .
+warning: in the working copy of 'styles.css', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        modified:   index.html
+        new file:   logo.png
+        new file:   styles.css
+
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git commit -m "4. add logo and css"
+[master 79f3f67] 4. add logo and css
+ 4 files changed, 28 insertions(+)
+ create mode 100644 .gitignore
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (HEAD -> master)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 08:48:06 2025 +0100
+
+    4. add logo and css
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch feature-restructure
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch     
+  feature-restructure
+* master
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout feature-restructure
+Switched to branch 'feature-restructure'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git log
+commit 79f3f671edd11e38363269d32258a6c4d1bc83d5 (HEAD -> feature-restructure, master)
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Fri Feb 21 08:48:06 2025 +0100
+
+    4. add logo and css
+
+commit 98a84be29ac78c4a1ada3b1af099d6c24d902669
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 16:05:41 2025 +0100
+Date:   Thu Feb 20 16:05:41 2025 +0100
+
+    3. add youtube
+
+commit dfc59c122ffb195aecb5ad3609a55a7469be489d
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:58:25 2025 +0100
+
+    second commit
+
+commit dfa2aa922d7f50a17355ccb7ddc98e22bcdff960
+Author: gepirvu <pirvugeorgian.bi@gmail.com>
+Date:   Thu Feb 20 15:49:13 2025 +0100
+
+    initial commit
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch
+* feature-restructure
+  master
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch
+* feature-restructure
+  master
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch -D feature-restructure
+error: cannot delete branch 'feature-restructure' used by worktree at 'C:/Users/DTGEORPIRV/Documents/GitHub Actions'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git checkout master
+Switched to branch 'master'
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch -D feature-restructure
+Deleted branch feature-restructure (was 79f3f67).
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions> git branch
+* master
+PS C:\Users\DTGEORPIRV\Documents\GitHub Actions>
